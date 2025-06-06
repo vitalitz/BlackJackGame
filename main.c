@@ -521,7 +521,7 @@ int8_t betting_phase(Player* player, Player* dealer)
         else if(bet < 10)
             printf("Minimum bet is 10. Please enter a valid bet: ");
         else if(bet % 10 != 0)
-            printf("The best must be multiplication of 10. Please enter a valid bet: ");
+            printf("The bet must be a multiple of 10. Please enter a valid bet: ");
         scanf("%hu", &bet);
     }
     player->cash -= bet;
